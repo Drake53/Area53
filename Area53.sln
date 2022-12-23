@@ -17,13 +17,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "perf", "perf", "{F80B3D49-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A441321B-0500-4264-B69C-06C30B63AFA2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Area53.WinForms", "src\Area53.WinForms\Area53.WinForms.csproj", "{C698327A-FF10-4FC7-8240-0859A5511A08}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{4F5AF9B1-AF04-4086-8E6D-94C9F9E73D1D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B986ED6E-E0CD-4375-B25F-629FD4FA82D3}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C698327A-FF10-4FC7-8240-0859A5511A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C698327A-FF10-4FC7-8240-0859A5511A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C698327A-FF10-4FC7-8240-0859A5511A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C698327A-FF10-4FC7-8240-0859A5511A08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C698327A-FF10-4FC7-8240-0859A5511A08} = {A441321B-0500-4264-B69C-06C30B63AFA2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3663B218-6921-42FC-8313-427AC5BCCB69}

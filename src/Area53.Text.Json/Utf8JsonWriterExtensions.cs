@@ -5,6 +5,7 @@
 // </copyright>
 // ------------------------------------------------------------------------------
 
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
@@ -49,6 +50,7 @@ namespace Area53.Text.Json
         /// <param name="value">The value to be written as a JSON number.</param>
         /// <param name="options">Options to control serialization behavior.</param>
         /// <param name="propertyName">The property name of the JSON object to be transcoded and written as UTF-8.</param>
+        [CLSCompliant(false)]
         public static void WriteNumber(this Utf8JsonWriter writer, uint value, JsonSerializerOptions? options = null, [CallerArgumentExpression("value"), DisallowNull] string? propertyName = null!)
         {
             writer.WritePropertyName(options?.PropertyNamingPolicy?.ConvertName(propertyName) ?? propertyName);
@@ -75,6 +77,7 @@ namespace Area53.Text.Json
         /// <param name="value">The value to be written as a JSON number.</param>
         /// <param name="options">Options to control serialization behavior.</param>
         /// <param name="propertyName">The property name of the JSON object to be transcoded and written as UTF-8.</param>
+        [CLSCompliant(false)]
         public static void WriteNumber(this Utf8JsonWriter writer, ulong value, JsonSerializerOptions? options = null, [CallerArgumentExpression("value"), DisallowNull] string? propertyName = null!)
         {
             writer.WritePropertyName(options?.PropertyNamingPolicy?.ConvertName(propertyName) ?? propertyName);
